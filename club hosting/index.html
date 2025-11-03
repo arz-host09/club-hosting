@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Hosting - Premium Web Hosting Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #290048;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 40px 0;
+            color: #FFD9FF;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .pricing-card {
+            background: #4A0078;
+            border-radius: 15px;
+            padding: 30px;
+            width: 350px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(213,122,255,0.2);
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #D57AFF, #FFD9FF);
+        }
+
+        .plan-name {
+            font-size: 24px;
+            color: #FFD9FF;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 36px;
+            color: #D57AFF;
+            margin-bottom: 20px;
+        }
+
+        .original-price {
+            font-size: 20px;
+            color: #FFD9FF;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .features-list li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #D57AFF;
+        }
+
+        .cta-button {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #D57AFF, #FFD9FF);
+            color: #290048;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(213,122,255,0.3);
+        }
+
+        .article-section {
+            background: rgba(74,0,120,0.5);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 50px 0;
+        }
+
+        .article-title {
+            color: #FFD9FF;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .article-content h2 {
+            color: #D57AFF;
+            margin: 25px 0 15px 0;
+        }
+
+        .article-content p {
+            margin: 15px 0;
+        }
+
+        .article-content ul {
+            margin: 15px 30px;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .article-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="site-title">Club Hosting</h1>
+        
+        <div class="pricing-container">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h2 class="plan-name">Basic</h2>
+                <div class="price">$0.99/mo <span class="original-price">$9.50</span></div>
+                <p>Get started with our Basic Plan – perfect for individuals and small businesses. Enjoy reliable hosting, essential features, and 24/7 support at an unbeatable price.</p>
+                <ul class="features-list">
+                    <li>1 Website</li>
+                    <li>6 Database</li>
+                    <li>15 GB Bandwidth</li>
+                    <li>1 GB Disk Space</li>
+                    <li>Same Renewal Price</li>
+                    <li>5 Email Accounts</li>
+                    <li>5 Sub Domains</li>
+                    <li>5 Parked Domains</li>
+                    <li>NVMe Storage</li>
+                    <li>Litespeed Cache Server</li>
+                    <li>Weekly Site Backup</li>
+                    <li>Free SSL</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="http://blackfriday2025.org/web-hosting" class="cta-button">Get Started</a>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="pricing-card">
+                <h2 class="plan-name">Standard</h2>
+                <div class="price">$2.43/mo <span class="original-price">$17.50</span></div>
+                <p>Elevate your online presence with our Standard Plan. Ideal for growing websites, it offers enhanced performance, expanded resources, and advanced features.</p>
+                <ul class="features-list">
+                    <li>Free Domain (.Com, .Info, .Net, .Org)</li>
+                    <li>5 Website</li>
+                    <li>Unlimited Database</li>
+                    <li>75 GB Bandwidth</li>
+                    <li>5 GB DiskSpace</li>
+                    <li>Same Renewal Price</li>
+                    <li>Unlimited Email Accounts</li>
+                    <li>NVMe Storage</li>
+                    <li>Litespeed Cache Server</li>
+                    <li>Unlimited Sub Domains</li>
+                    <li>20 Parked Domains</li>
+                    <li>Free SSL</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="http://blackfriday2025.org/web-hosting" class="cta-button">Get Started</a>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card">
+                <h2 class="plan-name">Premium</h2>
+                <div class="price">$3.58/mo <span class="original-price">$23.99</span></div>
+                <p>Unleash the full potential of your website with our Premium Plan. Tailored for high-traffic sites, it delivers top-tier performance, advanced security, and priority support.</p>
+                <ul class="features-list">
+                    <li>Free Domain (.Com, .Info, .Net, .Org)</li>
+                    <li>20 Website</li>
+                    <li>Unlimited Database</li>
+                    <li>200 GB/month Bandwidth</li>
+                    <li>20 GB disk Space</li>
+                    <li>Same Renewal Price</li>
+                    <li>Unlimited Email Accounts</li>
+                    <li>NVMe Storage</li>
+                    <li>Litespeed Cache Server</li>
+                    <li>Unlimited Sub Domains</li>
+                    <li>Unlimited Parked Domains</li>
+                    <li>Free SSL</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="http://blackfriday2025.org/web-hosting" class="cta-button">Get Started</a>
+            </div>
+        </div>
+
+        <div class="article-section">
+            <h1 class="article-title">Your Complete Guide to Web Hosting Solutions</h1>
+            
+            <div class="article-content">
+                <h2>Understanding Modern Web Hosting</h2>
+                <p>In today's digital landscape, choosing the right web hosting service is crucial for your online success. Club Hosting stands at the forefront of innovation, providing cutting-edge hosting solutions that power websites across the globe. Our commitment to excellence and customer satisfaction has made us a trusted partner for businesses of all sizes.</p>
+
+                <h2>Essential Features That Set Us Apart</h2>
+                <p>At the heart of our hosting services lies a powerful infrastructure built on NVMe storage technology, delivering unprecedented speed and reliability. Our LiteSpeed Cache Server ensures your website loads blazingly fast, while our comprehensive backup systems keep your data safe and secure. The integration of free SSL certificates across all plans demonstrates our commitment to security.</p>
+
+                <h2>Why Choose Professional Web Hosting?</h2>
+                <p>Professional web hosting is the backbone of your online presence. With Club Hosting, you're not just getting server space; you're investing in a complete hosting ecosystem. Our scalable solutions grow with your business, while our 24/7 support team ensures you're never alone in your hosting journey. The same renewal price policy protects you from unexpected cost increases.</p>
+
+                <h2>Key Features Explained</h2>
+                <ul>
+                    <li>NVMe Storage: Lightning-fast storage technology that accelerates website loading times</li>
+                    <li>LiteSpeed Cache Server: Advanced caching solution for optimal performance</li>
+                    <li>Multiple Database Support: Flexible database options for various applications</li>
+                    <li>Comprehensive Email Solutions: Professional email hosting with spam protection</li>
+                    <li>Domain Management: Easy control of multiple domains and subdomains</li>
+                </ul>
+
+                <h2>The Power of Reliable Hosting</h2>
+                <p>Reliability in web hosting is non-negotiable. Our infrastructure is built on redundant systems, ensuring your website stays online even during peak traffic periods. The implementation of advanced caching mechanisms and content delivery networks ensures consistent performance across different geographical locations.</p>
+
+                <h2>Making the Most of Your Hosting Plan</h2>
+                <p>Each hosting plan is carefully crafted to provide the perfect balance of features and value. From the Basic plan's essential features to the Premium plan's comprehensive suite of tools, we ensure that every customer finds their perfect match. The scalability of our plans means you can easily upgrade as your needs grow.</p>
+
+                <h2>Black Friday Hosting Deals</h2>
+                <p>As we approach the biggest shopping event of the year, <a href="http://blackfriday2025.org">Black Friday 2025</a> brings unprecedented opportunities for savings on web hosting. Our special promotional prices make it the perfect time to secure your hosting needs for the upcoming year. These limited-time offers provide substantial savings while maintaining our high-quality service standards.</p>
+
+                <h2>Security and Support</h2>
+                <p>Security is paramount in today's digital landscape. Our hosting solutions include robust security measures, from SSL certificates to regular malware scanning. The dedicated support team works around the clock to ensure your hosting experience remains smooth and trouble-free.</p>
+
+                <h2>Future-Proof Hosting Solutions</h2>
+                <p>The digital world evolves rapidly, and our hosting solutions are designed to keep pace. Regular infrastructure updates, new feature implementations, and continuous performance optimizations ensure your website stays ahead of the curve. Our commitment to innovation means you're always equipped with the latest hosting technologies.</p>
+
+                <h2>Conclusion</h2>
+                <p>Choosing the right web hosting provider is a crucial decision for your online success. Club Hosting combines cutting-edge technology, reliable performance, and exceptional support to deliver a hosting experience that exceeds expectations. Whether you're launching your first website or managing multiple high-traffic platforms, our diverse range of hosting solutions has you covered.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
